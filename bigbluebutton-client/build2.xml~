@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- BigBlueButton Client build.xml for use by Hudson builds.   -->
+<project name="BigBlueButton Client" basedir="."  >
+    	<property environment="env" />
+    	<property name="STATIC_RSL" value="true" />
+	    <property name="DEBUG" value="true" />
+    	<property name="BUILD_ENV" value="DEV" />
+    	<property name="FLEX_HOME" value="${env.FLEX_HOME}" />
+    	<property name="LOCALE_DIR" value="${FLEX_HOME}/frameworks/locale"/>
+    	<property name="BASE_DIR" value="${basedir}" />
+      <property name="themeFile" value="BBBDefault.css"/>
+	    <property name="blackTheme" value="BBBBlack.css"/>
+	    <property name="LOCALE" value="en_US" />
+	     <property name="RESOURCES_DIR" value="${BASE_DIR}/resources" />	
+	<property name="PROD_RESOURCES_DIR" value="${RESOURCES_DIR}/prod" />	
+	<property name="SRC_DIR" value="${BASE_DIR}/src" />
+		
+	<property name="OUTPUT_DIR" value="${BASE_DIR}/client" />
+	<taskdef resource="flexTasks.tasks" classpath="${FLEX_HOME}/ant/lib/flexTasks.jar" />
+
+	<!-- Declare module names here -->
+	<property name="BBB_MAIN" value="BigBlueButton" />
+	<property name="BROADCAST" value="BroadcastModule" />
+	<property name="CHAT" value="ChatModule" />
+	<property name="PRESENT" value="PresentModule" />
+	<property name="DESKSHARE" value="DeskShareModule" />
+	<property name="DESKSHARE_SA" value="DeskshareStandalone" />
+	<property name="CAM_PREVIEW_SA" value="WebcamPreviewStandalone" />
+	<property name="MICROPHONE_CHECK" value="MicrophoneCheck" />
+	<property name="CAMERA_CHECK" value="CameraCheck" />
+	<property name="CONNECTION_CHECK" value="RTMPConnCheck" />
+	<property name="CAM_VIEW_SA" value="WebcamViewStandalone" />
+	<property name="PHONE" value="PhoneModule" />
+	<property name="NOTES" value="NotesModule" />
+	<property name="VIDEO" value="VideoconfModule" />
+	<property name="WHITEBOARD" value="WhiteboardModule" />
+	<property name="VIDEO_DOCK" value="VideodockModule" />
+	<property name="POLLING" value="PollingModule" />
+	<property name="LAYOUT" value="LayoutModule" />
+	<property name="USERS" value="UsersModule" />
+	
+	<xmlproperty file="${SRC_DIR}/conf/locales.xml" collapseAttributes="true"/>
+	
+	<target name="init-ant-contrib">
+		<property name="ant-contrib.jar" location="${BASE_DIR}/build/lib/ant-contrib-0.6.jar"/>
+		<taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="${ant-contrib.jar}"/>
+	</target>
+	  
+	<target name="locales" depends="init-ant-contrib">
+		<echo message="Checking if locale output dir exists"/>
+		<available file="${OUTPUT_DIR}/locale" type="file" property="locale.dir.present"/>
+		<if> 
+        	<equals arg1="${locale.dir.present}" arg2="true"/> 
+           	<then> 
+				<echo message="Locale output dir exists. Deleting contents of ${OUTPUT_DIR}/locale"/> 
+				<delete>
+					<fileset dir="${OUTPUT_DIR}/locale">
+						<include name="**/*"/>
+					</fileset>
+				</delete>
+           	</then> 
+           	<else> 
+				<echo message="Locale output dir does not exists. Creating ${OUTPUT_DIR}/locale"/> 
+				<mkdir dir="${OUTPUT_DIR}/locale"/>
+           	</else> 
+        </if>
+
+		<echo message="Determining supported locales."/>
+		<foreach target="build-locale" param="supportedlocale">
+			<path id="locales.path.ref">
+		    	<dirset dir="${BASE_DIR}/locale">
+                            <!-- ignore transifex folder -->
+                            <exclude name=".tx"/>
+                        </dirset>
+		  	</path>
+		</foreach>
+	</target>
+		
+	<target name="branding" depends="init-ant-contrib">
+		<sequential>
+			<mxmlc file="${BASE_DIR}/branding/default/style/css/${themeFile}" 
+				output="${OUTPUT_DIR}/branding/css/${themeFile}.swf" 
+				debug="${DEBUG}" 
+				mxml.compatibility-version="3.0.0" 
+				swf-version="13" 
+				optimize="true">
+			</mxmlc>
+		</sequential>
+	</target>
+
+	<target name="build-bbb-main" description="Compile BigBlueButton Main">
+		<build-main src="${SRC_DIR}" target="${BBB_MAIN}" />
+		
+		<echo message="Copying common assets for BBB Main" />
+		<copy todir="${OUTPUT_DIR}/org/bigbluebutton/common/assets/images" >
+			<fileset dir="${BASE_DIR}/src/org/bigbluebutton/common/assets/images/" />
+		</copy>		
+	</target>
+
+	
+	<target name="build-layout" description="Compile Layout Module">
+		<build-module src="${SRC_DIR}" target="${LAYOUT}" />
+	</target>
+	
+	
+	<macrodef name="build-main">
+			<attribute name="target" description="Module to compile" />
+			<attribute name="flex" default="${FLEX_HOME}" description="Location of the Flex install." />
+			<attribute name="app" default="."/>
+			<attribute name="src" default="${SRC_DIR}" description="Path to the module to compile" />
+			<sequential>
+				<mxmlc file="@{src}/@{target}.mxml" output="${OUTPUT_DIR}/@{target}.swf" debug="${DEBUG}" mxml.compatibility-version="3.0.0" swf-version="13" optimize="true" link-report="linker-report.xml">
+					<target-player>11</target-player>
+					<load-config filename="@{flex}/frameworks/flex-config.xml" />
+					<source-path path-element="@{flex}/frameworks" />
+					
+					<!--
+				  		Dump out resources to find out what resources to include building the locales.
+				  		http://forums.adobe.com/thread/758619
+				  		ralam - sept 20, 2011
+					-->
+					<resource-bundle-list>bundles.txt</resource-bundle-list>
+	        			<static-link-runtime-shared-libraries>${STATIC_RSL}</static-link-runtime-shared-libraries>
+				
+					<compiler.library-path dir="@{flex}/frameworks" append="true">
+						<include name="libs" />
+						<include name="../bundles/{locale}" />
+					</compiler.library-path>
+
+					<compiler.library-path dir="@{app}" append="true">
+						<include name="libs" />
+						<include name="libs/generated" />
+					</compiler.library-path>
+
+					<default-size width="500" height="600" />
+				</mxmlc>
+				<echo message="**********************************************"/>
+				<echo message="*    Generated bundles.txt                   *"/>
+				<echo message="* Make sure you include all resources listed *"/>
+				<echo message="* in the file when building the locales.     *"/>
+				<echo message="**********************************************"/>
+			</sequential>
+		</macrodef>
+	
+	<macrodef name="build-module-no-link">
+		<attribute name="target" description="Module to compile" />
+		<attribute name="flex" default="${FLEX_HOME}" description="Location of the Flex install." />
+		<attribute name="app" default="."/>
+		<attribute name="src" default="${SRC_DIR}" description="Path to the module to compile" />
+		<sequential>
+			<mxmlc file="@{src}/@{target}.mxml" output="${OUTPUT_DIR}/@{target}.swf" debug="${DEBUG}" mxml.compatibility-version="3.0.0" swf-version="13">
+				<target-player>11</target-player>
+				<load-config filename="@{flex}/frameworks/flex-config.xml" />
+				<source-path path-element="@{flex}/frameworks" />
+				<static-link-runtime-shared-libraries>${STATIC_RSL}</static-link-runtime-shared-libraries>
+
+				<compiler.library-path dir="@{flex}/frameworks" append="true">
+					<include name="libs" />
+					<include name="../bundles/{locale}" />
+				</compiler.library-path>
+
+				<compiler.library-path dir="@{app}" append="true">
+					<include name="libs" />
+					<include name="libs/generated" />
+				</compiler.library-path>
+
+				<default-size width="500" height="600" />
+			</mxmlc>
+		</sequential>
+	</macrodef>
+	
+	<macrodef name="build-module">
+		<attribute name="target" description="Module to compile" />
+		<attribute name="flex" default="${FLEX_HOME}" description="Location of the Flex install." />
+		<attribute name="app" default="."/>
+		<attribute name="src" default="${SRC_DIR}" description="Path to the module to compile" />
+		<sequential>
+			<mxmlc file="@{src}/@{target}.mxml" output="${OUTPUT_DIR}/@{target}.swf" debug="${DEBUG}" mxml.compatibility-version="3.0.0" swf-version="13" optimize="true" load-externs="linker-report.xml">
+				<target-player>11</target-player>
+				<load-config filename="@{flex}/frameworks/flex-config.xml" />
+				<source-path path-element="@{flex}/frameworks" />
+				<static-link-runtime-shared-libraries>${STATIC_RSL}</static-link-runtime-shared-libraries>
+
+				<compiler.library-path dir="@{flex}/frameworks" append="true">
+					<include name="libs" />
+					<include name="../bundles/{locale}" />
+				</compiler.library-path>
+
+				<compiler.library-path dir="@{app}" append="true">
+					<include name="libs" />
+					<include name="libs/generated" />
+				</compiler.library-path>
+
+				<default-size width="500" height="600" />
+			</mxmlc>
+		</sequential>
+	</macrodef>
+
+		
+	<target name="compile-bbb" depends="build-main-chat-present, build-deskshare-phone-video-whiteboard-dyn, copy-resource-files"
+			description="Compiling the BBB without copying config.xml">	
+	</target>
+
+
+	<target name="generate-html-wrapper">
+		<html-wrapper
+			title="BigBlueButton"
+			file="BigBlueButton.html"
+			height="100%"
+			width="100%"
+			bgcolor="grey"
+			application="BBB"
+			swf="BigBlueButton"
+			version-major="10"
+			version-minor="3"
+			version-revision="0"
+			history="true"
+			output="${OUTPUT_DIR}"
+		/>
+	</target>
+
+</project>
