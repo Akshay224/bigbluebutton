@@ -1,0 +1,45 @@
+body    {overflow-y:scroll;}
+
+#StreamLine_Header {
+	height: 50px;
+	width: 100%;
+	text-align: left;
+	font-size: 20px;
+	background-color: #000000;
+	color: #878787;
+	line-height:50px;
+	padding-right: 40px;
+	padding-left: 40px;
+	font-family: Calibri;
+}
+
+.Left_Panel {
+	height: 200px;
+
+	font-family: Calibri;
+	font-size: 20px;
+	text-align: center;
+}
+
+.lp1 {
+	background-color:#C4DDFF;
+}
+
+.lp2 {
+	background-color:#FFC4C4;
+}
+
+.lp3 {
+	background-color:#C4DDFF;
+}
+#StreamLine_Left {
+	float: left;
+	width: 10%;
+	
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+#flashclient {
+	margin:0 auto;
+}
