@@ -12,4 +12,4 @@ BigBlueButton supports real-time sharing of slides (PDF and any document readabl
 
 For more information on the latest release -- including installation instructions, demo server, API, and overview of architecture -- see [http://docs.bigbluebutton.org/](http://docs.bigbluebutton.org/).
 
-BigBlueButton and the BigBlueButton Logo are trademarks of [BigBlueButton Inc] (http://bigbluebutton.org) .
+BigBlueButton and the BigBlueButton Logo are trademarks of [BigBlueButton Inc] (http://bigbluebutton.org).
