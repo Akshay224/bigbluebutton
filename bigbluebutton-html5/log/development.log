@@ -1,0 +1,634 @@
+{"level":"info","message":"server start","timestamp":"2015-06-30T17:17:57.247Z"}
+{"level":"info","message":"cleared Users Collection (all meetings)!","timestamp":"2015-06-30T17:17:57.248Z"}
+{"level":"info","message":"cleared Shapes Collection (all meetings)!","timestamp":"2015-06-30T17:17:57.256Z"}
+{"level":"info","message":"cleared Slides Collection (all meetings)!","timestamp":"2015-06-30T17:17:57.258Z"}
+{"level":"info","message":"cleared Presentations Collection (all meetings)!","timestamp":"2015-06-30T17:17:57.260Z"}
+{"level":"info","message":"constructor RedisPubSub","timestamp":"2015-06-30T17:17:57.289Z"}
+{"level":"info","message":"Subscribing message on channel: bigbluebutton:from-bbb-apps:*","timestamp":"2015-06-30T17:17:57.292Z"}
+{"level":"info","message":"created pubsub","timestamp":"2015-06-30T17:17:57.294Z"}
+{"level":"info","message":"Subscribed to bigbluebutton:from-bbb-apps:*","timestamp":"2015-06-30T17:17:57.307Z"}
+{"level":"info","message":"Let's store some data for the running meetings so that when an HTML5 client joins everything is ready!","timestamp":"2015-06-30T17:17:57.341Z"}
+{"level":"info","message":"server start","timestamp":"2015-06-30T17:18:06.503Z"}
+{"level":"info","message":"cleared Users Collection (all meetings)!","timestamp":"2015-06-30T17:18:06.505Z"}
+{"level":"info","message":"cleared Shapes Collection (all meetings)!","timestamp":"2015-06-30T17:18:06.511Z"}
+{"level":"info","message":"cleared Slides Collection (all meetings)!","timestamp":"2015-06-30T17:18:06.513Z"}
+{"level":"info","message":"cleared Presentations Collection (all meetings)!","timestamp":"2015-06-30T17:18:06.514Z"}
+{"level":"info","message":"constructor RedisPubSub","timestamp":"2015-06-30T17:18:06.535Z"}
+{"level":"info","message":"Subscribing message on channel: bigbluebutton:from-bbb-apps:*","timestamp":"2015-06-30T17:18:06.537Z"}
+{"level":"info","message":"created pubsub","timestamp":"2015-06-30T17:18:06.538Z"}
+{"level":"info","message":"Subscribed to bigbluebutton:from-bbb-apps:*","timestamp":"2015-06-30T17:18:06.546Z"}
+{"level":"info","message":"Let's store some data for the running meetings so that when an HTML5 client joins everything is ready!","timestamp":"2015-06-30T17:18:06.570Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=null, authToken=null validated:undefined","timestamp":"2015-06-30T17:20:11.270Z"}
+{"level":"error","message":"in meetingId=null userId=null tried to perform subscribeChat without permission\n..while the authToken was undefined    and the user's object is undefined","timestamp":"2015-06-30T17:20:11.271Z"}
+{"level":"info","message":"in isAllowedTo: action-logoutSelf, userId=null, authToken=null validated:undefined","timestamp":"2015-06-30T17:20:11.615Z"}
+{"level":"error","message":"in meetingId=null userId=null tried to perform logoutSelf without permission\n..while the authToken was undefined    and the user's object is undefined","timestamp":"2015-06-30T17:20:11.616Z"}
+{"message":"eventType=  meeting_created_message  ","level":"info","timestamp":"2015-06-30T17:22:48.335Z"}
+{"level":"info","message":"added meeting _id=[Je8tCQoieKen9uWX7]:meetingId=[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259]:name=[Demo Meeting]:duration=[0]:voiceConf=[76467] roomLockSettings:[{\"disablePrivChat\":false,\"disableCam\":false,\"disableMic\":false,\"lockOnJoin\":true,\"lockedLayout\":false,\"disablePubChat\":false}].","timestamp":"2015-06-30T17:22:48.340Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-06-30T17:22:48.813Z"}
+{"userid":"9yvtepcj12st","authToken":"ljkgyidsyxfu","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-06-30T17:22:53.319Z"}
+{"level":"info","message":"added user dummy html5 user with: userid=[9yvtepcj12st], id=[HsYitf8pR37jCrxKy] Users.size is now 1","timestamp":"2015-06-30T17:22:53.328Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-06-30T17:22:53.347Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-06-30T17:22:53.348Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was false","timestamp":"2015-06-30T17:22:53.352Z"}
+{"level":"info","message":"UPDATING USER 9yvtepcj12st, authToken=ljkgyidsyxfu, locked=false","timestamp":"2015-06-30T17:22:53.362Z"}
+{"level":"info","message":"user.validated for user 9yvtepcj12st in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259 just became true","timestamp":"2015-06-30T17:22:53.369Z"}
+{"level":"info","message":"added a system message in chat for user 9yvtepcj12st","timestamp":"2015-06-30T17:22:53.385Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=9yvtepcj12st, authToken=ljkgyidsyxfu validated:true","timestamp":"2015-06-30T17:22:53.403Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259 9yvtepcj12st ljkgyidsyxfu","timestamp":"2015-06-30T17:22:53.407Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:22:53.886Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:22:54.067Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:22:54.251Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259, 9yvtepcj12st, ljkgyidsyxfu","timestamp":"2015-06-30T17:22:54.432Z"}
+{"level":"info","message":"found it from the first time 9yvtepcj12st","timestamp":"2015-06-30T17:22:54.434Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=9yvtepcj12st, authToken=ljkgyidsyxfu validated:true","timestamp":"2015-06-30T17:22:54.436Z"}
+{"level":"info","message":"9yvtepcj12st was allowed to subscribe to 'users'","timestamp":"2015-06-30T17:22:54.439Z"}
+{"level":"info","message":"username of the subscriber: asd, connection_status becomes online","timestamp":"2015-06-30T17:22:54.440Z"}
+{"level":"info","message":"----removed slide[d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1435684968383/1] from 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:23:03.677Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-06-30T17:25:23.962Z"}
+{"userid":"vz5jmsllda0q","authToken":"ba3f9ohmmttu","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-06-30T17:25:30.349Z"}
+{"level":"info","message":"added user dummy html5 user with: userid=[vz5jmsllda0q], id=[Q3h82t3QbZ3qiw7zb] Users.size is now 2","timestamp":"2015-06-30T17:25:30.354Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-06-30T17:25:30.372Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-06-30T17:25:30.374Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was false","timestamp":"2015-06-30T17:25:30.379Z"}
+{"level":"info","message":"UPDATING USER vz5jmsllda0q, authToken=ba3f9ohmmttu, locked=false","timestamp":"2015-06-30T17:25:30.382Z"}
+{"level":"info","message":"user.validated for user vz5jmsllda0q in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259 just became true","timestamp":"2015-06-30T17:25:30.383Z"}
+{"level":"info","message":"added a system message in chat for user vz5jmsllda0q","timestamp":"2015-06-30T17:25:30.390Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=vz5jmsllda0q, authToken=ba3f9ohmmttu validated:true","timestamp":"2015-06-30T17:25:30.602Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259 vz5jmsllda0q ba3f9ohmmttu","timestamp":"2015-06-30T17:25:30.619Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:25:31.460Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:25:31.707Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:25:31.917Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259, vz5jmsllda0q, ba3f9ohmmttu","timestamp":"2015-06-30T17:25:32.130Z"}
+{"level":"info","message":"found it from the first time vz5jmsllda0q","timestamp":"2015-06-30T17:25:32.132Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=vz5jmsllda0q, authToken=ba3f9ohmmttu validated:true","timestamp":"2015-06-30T17:25:32.133Z"}
+{"level":"info","message":"vz5jmsllda0q was allowed to subscribe to 'users'","timestamp":"2015-06-30T17:25:32.136Z"}
+{"level":"info","message":"username of the subscriber: Qwerty, connection_status becomes online","timestamp":"2015-06-30T17:25:32.137Z"}
+{"level":"info","message":"in isAllowedTo: action-chatPublic, userId=vz5jmsllda0q, authToken=ba3f9ohmmttu validated:true","timestamp":"2015-06-30T17:25:45.791Z"}
+{"level":"info","message":"publishing chat to redis","timestamp":"2015-06-30T17:25:45.795Z"}
+{"message":"eventType=  send_public_chat_message  ","level":"info","timestamp":"2015-06-30T17:25:45.811Z"}
+{"level":"info","message":"added chat id=[9XAGeng6L8ptSPmYi]:Hey.","timestamp":"2015-06-30T17:25:45.814Z"}
+{"level":"info","message":"in isAllowedTo: action-chatPublic, userId=9yvtepcj12st, authToken=ljkgyidsyxfu validated:true","timestamp":"2015-06-30T17:25:53.054Z"}
+{"level":"info","message":"publishing chat to redis","timestamp":"2015-06-30T17:25:53.058Z"}
+{"message":"eventType=  send_public_chat_message  ","level":"info","timestamp":"2015-06-30T17:25:53.066Z"}
+{"level":"info","message":"added chat id=[nyfgRtTor7ZaQebo5]:yay.","timestamp":"2015-06-30T17:25:53.068Z"}
+{"level":"info","message":"in isAllowedTo: action-logoutSelf, userId=vz5jmsllda0q, authToken=ba3f9ohmmttu validated:true","timestamp":"2015-06-30T17:26:07.130Z"}
+{"level":"info","message":"a user is logging out from 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259:vz5jmsllda0q","timestamp":"2015-06-30T17:26:07.134Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259:vz5jmsllda0q","timestamp":"2015-06-30T17:26:07.135Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-06-30T17:26:07.145Z"}
+{"level":"info","message":"marking user [vz5jmsllda0q] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259]","timestamp":"2015-06-30T17:26:07.145Z"}
+{"level":"info","message":"\na user lost connection: session.id=3G4txFZkfhWSE3SZR userId = vz5jmsllda0q, username=Qwerty, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:26:07.581Z"}
+{"level":"info","message":"username of the user losing connection: Qwerty, connection_status: becomes offline","timestamp":"2015-06-30T17:26:07.583Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259:vz5jmsllda0q","timestamp":"2015-06-30T17:26:07.584Z"}
+{"level":"info","message":"in isAllowedTo: action-logoutSelf, userId=9yvtepcj12st, authToken=ljkgyidsyxfu validated:true","timestamp":"2015-06-30T17:26:10.300Z"}
+{"level":"info","message":"a user is logging out from 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259:9yvtepcj12st","timestamp":"2015-06-30T17:26:10.303Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259:9yvtepcj12st","timestamp":"2015-06-30T17:26:10.304Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-06-30T17:26:10.311Z"}
+{"level":"info","message":"marking user [9yvtepcj12st] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259]","timestamp":"2015-06-30T17:26:10.311Z"}
+{"level":"info","message":"\na user lost connection: session.id=oWtDRyWRcBHh5zwfz userId = 9yvtepcj12st, username=asd, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259","timestamp":"2015-06-30T17:26:10.481Z"}
+{"level":"info","message":"username of the user losing connection: asd, connection_status: becomes offline","timestamp":"2015-06-30T17:26:10.483Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435684968259:9yvtepcj12st","timestamp":"2015-06-30T17:26:10.485Z"}
+{"level":"info","message":"server start","timestamp":"2015-07-01T02:32:05.542Z"}
+{"level":"info","message":"cleared Users Collection (all meetings)!","timestamp":"2015-07-01T02:32:05.544Z"}
+{"level":"info","message":"cleared Shapes Collection (all meetings)!","timestamp":"2015-07-01T02:32:05.555Z"}
+{"level":"info","message":"cleared Slides Collection (all meetings)!","timestamp":"2015-07-01T02:32:05.558Z"}
+{"level":"info","message":"cleared Presentations Collection (all meetings)!","timestamp":"2015-07-01T02:32:05.586Z"}
+{"level":"info","message":"constructor RedisPubSub","timestamp":"2015-07-01T02:32:05.590Z"}
+{"level":"info","message":"Subscribing message on channel: bigbluebutton:from-bbb-apps:*","timestamp":"2015-07-01T02:32:05.592Z"}
+{"level":"info","message":"created pubsub","timestamp":"2015-07-01T02:32:05.593Z"}
+{"level":"info","message":"Subscribed to bigbluebutton:from-bbb-apps:*","timestamp":"2015-07-01T02:32:05.605Z"}
+{"level":"info","message":"Let's store some data for the running meetings so that when an HTML5 client joins everything is ready!","timestamp":"2015-07-01T02:32:05.638Z"}
+{"message":"eventType=  meeting_created_message  ","level":"info","timestamp":"2015-07-01T02:32:47.256Z"}
+{"level":"info","message":"added meeting _id=[fiunoGjNBrK4zFMSe]:meetingId=[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249]:name=[Demo Meeting]:duration=[0]:voiceConf=[78269] roomLockSettings:[{\"disablePrivChat\":false,\"disableCam\":false,\"disableMic\":false,\"lockOnJoin\":true,\"lockedLayout\":false,\"disablePubChat\":false}].","timestamp":"2015-07-01T02:32:47.263Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-01T02:32:47.286Z"}
+{"userid":"uyzhakwd78xy","authToken":"jawcfytpfrfj","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-07-01T02:32:53.440Z"}
+{"level":"info","message":"added user dummy html5 user with: userid=[uyzhakwd78xy], id=[nL96kD5obTjhCAj9D] Users.size is now 1","timestamp":"2015-07-01T02:32:53.447Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-01T02:32:53.462Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-01T02:32:53.464Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was false","timestamp":"2015-07-01T02:32:53.476Z"}
+{"level":"info","message":"UPDATING USER uyzhakwd78xy, authToken=jawcfytpfrfj, locked=false","timestamp":"2015-07-01T02:32:53.484Z"}
+{"level":"info","message":"user.validated for user uyzhakwd78xy in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 just became true","timestamp":"2015-07-01T02:32:53.493Z"}
+{"level":"info","message":"added a system message in chat for user uyzhakwd78xy","timestamp":"2015-07-01T02:32:53.507Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=uyzhakwd78xy, authToken=jawcfytpfrfj validated:true","timestamp":"2015-07-01T02:32:53.548Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 uyzhakwd78xy jawcfytpfrfj","timestamp":"2015-07-01T02:32:53.551Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:32:53.940Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:32:54.104Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:32:54.276Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249, uyzhakwd78xy, jawcfytpfrfj","timestamp":"2015-07-01T02:32:54.609Z"}
+{"level":"info","message":"found it from the first time uyzhakwd78xy","timestamp":"2015-07-01T02:32:54.611Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=uyzhakwd78xy, authToken=jawcfytpfrfj validated:true","timestamp":"2015-07-01T02:32:54.612Z"}
+{"level":"info","message":"uyzhakwd78xy was allowed to subscribe to 'users'","timestamp":"2015-07-01T02:32:54.616Z"}
+{"level":"info","message":"username of the subscriber: akshay, connection_status becomes online","timestamp":"2015-07-01T02:32:54.643Z"}
+{"level":"info","message":"----removed slide[d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1435717967250/1] from 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:33:02.262Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-01T02:33:36.406Z"}
+{"userid":"nzduifystznx","authToken":"0jgg0wl4296a","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-07-01T02:33:46.084Z"}
+{"level":"info","message":"added user dummy html5 user with: userid=[nzduifystznx], id=[S2zbXmGXB6ixtEZ2t] Users.size is now 2","timestamp":"2015-07-01T02:33:46.090Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-01T02:33:46.096Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-01T02:33:46.097Z"}
+{"message":"eventType=  presenter_assigned_message  ","level":"info","timestamp":"2015-07-01T02:33:46.098Z"}
+{"message":"eventType=  user_status_changed_message  ","level":"info","timestamp":"2015-07-01T02:33:46.099Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was false","timestamp":"2015-07-01T02:33:46.102Z"}
+{"level":"info","message":"UPDATING USER nzduifystznx, authToken=0jgg0wl4296a, locked=false","timestamp":"2015-07-01T02:33:46.104Z"}
+{"level":"info","message":"user.validated for user nzduifystznx in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 just became true","timestamp":"2015-07-01T02:33:46.107Z"}
+{"level":"info","message":"added a system message in chat for user nzduifystznx","timestamp":"2015-07-01T02:33:46.113Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=nzduifystznx, authToken=0jgg0wl4296a validated:true","timestamp":"2015-07-01T02:33:46.237Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 nzduifystznx 0jgg0wl4296a","timestamp":"2015-07-01T02:33:46.240Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:33:47.456Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:33:48.196Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:33:48.364Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249, nzduifystznx, 0jgg0wl4296a","timestamp":"2015-07-01T02:33:48.548Z"}
+{"level":"info","message":"found it from the first time nzduifystznx","timestamp":"2015-07-01T02:33:48.549Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=nzduifystznx, authToken=0jgg0wl4296a validated:true","timestamp":"2015-07-01T02:33:48.550Z"}
+{"level":"info","message":"nzduifystznx was allowed to subscribe to 'users'","timestamp":"2015-07-01T02:33:48.553Z"}
+{"level":"info","message":"username of the subscriber: Alex, connection_status becomes online","timestamp":"2015-07-01T02:33:48.555Z"}
+{"level":"info","message":"in isAllowedTo: action-chatPublic, userId=uyzhakwd78xy, authToken=jawcfytpfrfj validated:true","timestamp":"2015-07-01T02:34:30.266Z"}
+{"level":"info","message":"publishing chat to redis","timestamp":"2015-07-01T02:34:30.270Z"}
+{"message":"eventType=  send_public_chat_message  ","level":"info","timestamp":"2015-07-01T02:34:30.275Z"}
+{"level":"info","message":"added chat id=[9TWk33kJieopxJGtE]:hey.","timestamp":"2015-07-01T02:34:30.277Z"}
+{"level":"info","message":"in isAllowedTo: action-chatPublic, userId=nzduifystznx, authToken=0jgg0wl4296a validated:true","timestamp":"2015-07-01T02:35:02.168Z"}
+{"level":"info","message":"publishing chat to redis","timestamp":"2015-07-01T02:35:02.172Z"}
+{"message":"eventType=  send_public_chat_message  ","level":"info","timestamp":"2015-07-01T02:35:02.175Z"}
+{"level":"info","message":"added chat id=[WZBAu7ihP98S93FtP]:Helli..","timestamp":"2015-07-01T02:35:02.177Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-01T02:35:46.873Z"}
+{"message":"eventType=  permisssion_setting_initialized_message  ","level":"info","timestamp":"2015-07-01T02:35:59.358Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-01T02:35:59.588Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-01T02:35:59.590Z"}
+{"level":"info","message":"a non-html5 user got validate_auth_token_reply.","timestamp":"2015-07-01T02:35:59.591Z"}
+{"level":"info","message":"NOTE: got user_joined_message ","timestamp":"2015-07-01T02:35:59.594Z"}
+{"level":"info","message":"joining user userid=[d8m6cmw07mmv_1], id=[SFPcLcLHvfqfFr2gz]:admin. Users.size is now 3","timestamp":"2015-07-01T02:35:59.602Z"}
+{"message":"eventType=  get_users_reply  ","level":"info","timestamp":"2015-07-01T02:36:00.086Z"}
+{"message":"eventType=  get_recording_status_reply  ","level":"info","timestamp":"2015-07-01T02:36:00.087Z"}
+{"level":"info","message":"\na user lost connection: session.id=dst55CkJFBY4SvK2k userId = nzduifystznx, username=Alex, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:31.623Z"}
+{"level":"info","message":"username of the user losing connection: Alex, connection_status: becomes offline","timestamp":"2015-07-01T02:36:31.640Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249:nzduifystznx","timestamp":"2015-07-01T02:36:31.643Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-01T02:36:31.653Z"}
+{"level":"info","message":"marking user [nzduifystznx] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249]","timestamp":"2015-07-01T02:36:31.653Z"}
+{"message":"eventType=  presenter_assigned_message  ","level":"info","timestamp":"2015-07-01T02:36:31.654Z"}
+{"message":"eventType=  user_status_changed_message  ","level":"info","timestamp":"2015-07-01T02:36:31.656Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=nzduifystznx, authToken=0jgg0wl4296a validated:true","timestamp":"2015-07-01T02:36:37.992Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 nzduifystznx 0jgg0wl4296a","timestamp":"2015-07-01T02:36:37.995Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:38.552Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:38.729Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:38.901Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249, nzduifystznx, 0jgg0wl4296a","timestamp":"2015-07-01T02:36:39.073Z"}
+{"level":"info","message":"found it from the first time nzduifystznx","timestamp":"2015-07-01T02:36:39.074Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=nzduifystznx, authToken=0jgg0wl4296a validated:true","timestamp":"2015-07-01T02:36:39.075Z"}
+{"level":"info","message":"nzduifystznx was allowed to subscribe to 'users'","timestamp":"2015-07-01T02:36:39.078Z"}
+{"userid":"nzduifystznx","authToken":"0jgg0wl4296a","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-07-01T02:36:39.078Z"}
+{"level":"info","message":"html5 user userid:[nzduifystznx] from [183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249] tried to revalidate token","timestamp":"2015-07-01T02:36:39.079Z"}
+{"level":"info","message":"username of the subscriber: Alex, connection_status becomes online","timestamp":"2015-07-01T02:36:39.081Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-01T02:36:39.084Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-01T02:36:39.084Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was true","timestamp":"2015-07-01T02:36:39.088Z"}
+{"level":"info","message":"UPDATING USER nzduifystznx, authToken=0jgg0wl4296a, locked=false","timestamp":"2015-07-01T02:36:39.089Z"}
+{"level":"info","message":"user.validated for user nzduifystznx in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 just became true","timestamp":"2015-07-01T02:36:39.092Z"}
+{"level":"info","message":"\na user lost connection: session.id=oNvRMqzKuGKAfzd9B userId = nzduifystznx, username=Alex, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:46.426Z"}
+{"level":"info","message":"username of the user losing connection: Alex, connection_status: becomes offline","timestamp":"2015-07-01T02:36:46.429Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249:nzduifystznx","timestamp":"2015-07-01T02:36:46.432Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-01T02:36:46.436Z"}
+{"level":"info","message":"marking user [nzduifystznx] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249]","timestamp":"2015-07-01T02:36:46.436Z"}
+{"userid":"nzduifystznx","authToken":"0jgg0wl4296a","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-07-01T02:36:51.831Z"}
+{"level":"info","message":"html5 user userid:[nzduifystznx] from [183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249] tried to revalidate token","timestamp":"2015-07-01T02:36:51.834Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-01T02:36:51.837Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-01T02:36:51.838Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was true","timestamp":"2015-07-01T02:36:51.840Z"}
+{"level":"info","message":"UPDATING USER nzduifystznx, authToken=0jgg0wl4296a, locked=false","timestamp":"2015-07-01T02:36:51.843Z"}
+{"level":"info","message":"user.validated for user nzduifystznx in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 just became true","timestamp":"2015-07-01T02:36:51.853Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=nzduifystznx, authToken=0jgg0wl4296a validated:true","timestamp":"2015-07-01T02:36:51.857Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249 nzduifystznx 0jgg0wl4296a","timestamp":"2015-07-01T02:36:51.860Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:53.404Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:53.732Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:36:53.926Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249, nzduifystznx, 0jgg0wl4296a","timestamp":"2015-07-01T02:36:54.109Z"}
+{"level":"info","message":"found it from the first time nzduifystznx","timestamp":"2015-07-01T02:36:54.111Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=nzduifystznx, authToken=0jgg0wl4296a validated:true","timestamp":"2015-07-01T02:36:54.112Z"}
+{"level":"info","message":"nzduifystznx was allowed to subscribe to 'users'","timestamp":"2015-07-01T02:36:54.115Z"}
+{"level":"info","message":"username of the subscriber: Alex, connection_status becomes online","timestamp":"2015-07-01T02:36:54.116Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:24.164Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:24.348Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:24.586Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:24.807Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:25.040Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:25.354Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:25.595Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:25.843Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:26.023Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:26.222Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:26.393Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:26.738Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:26.752Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:27.332Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:27.595Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-01T02:37:27.758Z"}
+{"level":"info","message":"\na user lost connection: session.id=5NKmQG3ZAy64wmrgc userId = nzduifystznx, username=Alex, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T02:39:09.521Z"}
+{"level":"info","message":"username of the user losing connection: Alex, connection_status: becomes offline","timestamp":"2015-07-01T02:39:09.522Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249:nzduifystznx","timestamp":"2015-07-01T02:39:09.528Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-01T02:39:09.531Z"}
+{"level":"info","message":"marking user [nzduifystznx] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249]","timestamp":"2015-07-01T02:39:09.531Z"}
+{"level":"info","message":"\na user lost connection: session.id=aNt8viYcqbzEWZbgi userId = uyzhakwd78xy, username=akshay, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249","timestamp":"2015-07-01T03:01:19.910Z"}
+{"level":"info","message":"username of the user losing connection: akshay, connection_status: becomes offline","timestamp":"2015-07-01T03:01:19.913Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249:uyzhakwd78xy","timestamp":"2015-07-01T03:01:19.916Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-01T03:01:19.921Z"}
+{"level":"info","message":"marking user [uyzhakwd78xy] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249]","timestamp":"2015-07-01T03:01:19.921Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-01T03:02:04.363Z"}
+{"level":"info","message":"marking user [d8m6cmw07mmv_1] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1435717967249]","timestamp":"2015-07-01T03:02:04.365Z"}
+{"level":"info","message":"server start","timestamp":"2015-07-21T06:57:53.330Z"}
+{"level":"info","message":"cleared Users Collection (all meetings)!","timestamp":"2015-07-21T06:57:53.332Z"}
+{"level":"info","message":"cleared Chat Collection (all meetings)!","timestamp":"2015-07-21T06:57:53.333Z"}
+{"level":"info","message":"cleared Slides Collection (all meetings)!","timestamp":"2015-07-21T06:57:53.347Z"}
+{"level":"info","message":"cleared Presentations Collection (all meetings)!","timestamp":"2015-07-21T06:57:53.375Z"}
+{"level":"info","message":"constructor RedisPubSub","timestamp":"2015-07-21T06:57:53.378Z"}
+{"level":"info","message":"Subscribing message on channel: bigbluebutton:from-bbb-apps:*","timestamp":"2015-07-21T06:57:53.380Z"}
+{"level":"info","message":"created pubsub","timestamp":"2015-07-21T06:57:53.381Z"}
+{"level":"info","message":"Subscribed to bigbluebutton:from-bbb-apps:*","timestamp":"2015-07-21T06:57:53.392Z"}
+{"level":"info","message":"Let's store some data for the running meetings so that when an HTML5 client joins everything is ready!","timestamp":"2015-07-21T06:57:53.428Z"}
+{"message":"eventType=  get_users_reply  ","level":"info","timestamp":"2015-07-21T06:57:53.430Z"}
+{"message":"eventType=  new_permission_settings  ","level":"info","timestamp":"2015-07-21T06:57:53.433Z"}
+{"level":"info","message":"added meeting _id=[7tBrkfN3YJqcjAYiG]:meetingId=[7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858]:name=[StreamLine Lecture 1]:duration=[0]:voiceConf=[70722] roomLockSettings:[{\"disablePrivChat\":false,\"disableCam\":false,\"disableMic\":false,\"lockOnJoin\":true,\"lockedLayout\":false,\"disablePubChat\":false}].","timestamp":"2015-07-21T06:57:53.439Z"}
+{"level":"info","message":"NOTE: got user_joined_message ","timestamp":"2015-07-21T06:57:53.439Z"}
+{"level":"info","message":"joining user userid=[isjjhbyqudxv_6], id=[LFsovqqKyJRhCA5C7]:Admin User. Users.size is now 1","timestamp":"2015-07-21T06:57:53.452Z"}
+{"message":"eventType=  meeting_created_message  ","level":"info","timestamp":"2015-07-21T06:58:22.356Z"}
+{"level":"info","message":"added meeting _id=[j72CYqqPAtcAPBZit]:meetingId=[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352]:name=[Demo Meeting]:duration=[0]:voiceConf=[78103] roomLockSettings:[{\"disablePrivChat\":false,\"disableCam\":false,\"disableMic\":false,\"lockOnJoin\":true,\"lockedLayout\":false,\"disablePubChat\":false}].","timestamp":"2015-07-21T06:58:22.361Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-21T06:58:22.387Z"}
+{"userid":"7nwexggjfeap","authToken":"p22jvnkcqtpr","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-07-21T06:58:29.005Z"}
+{"level":"info","message":"added user dummy html5 user with: userid=[7nwexggjfeap], id=[sLG4ZPifh5X7MaufA] Users.size is now 1","timestamp":"2015-07-21T06:58:29.013Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-21T06:58:29.034Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-21T06:58:29.035Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was false","timestamp":"2015-07-21T06:58:29.037Z"}
+{"level":"info","message":"UPDATING USER 7nwexggjfeap, authToken=p22jvnkcqtpr, locked=false","timestamp":"2015-07-21T06:58:29.044Z"}
+{"level":"info","message":"user.validated for user 7nwexggjfeap in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352 just became true","timestamp":"2015-07-21T06:58:29.046Z"}
+{"level":"info","message":"added a system message in chat for user 7nwexggjfeap","timestamp":"2015-07-21T06:58:29.053Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=7nwexggjfeap, authToken=p22jvnkcqtpr validated:true","timestamp":"2015-07-21T06:58:29.070Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352 7nwexggjfeap p22jvnkcqtpr","timestamp":"2015-07-21T06:58:29.074Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T06:58:29.559Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T06:58:29.782Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T06:58:29.991Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352, 7nwexggjfeap, p22jvnkcqtpr","timestamp":"2015-07-21T06:58:30.165Z"}
+{"level":"info","message":"found it from the first time 7nwexggjfeap","timestamp":"2015-07-21T06:58:30.167Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=7nwexggjfeap, authToken=p22jvnkcqtpr validated:true","timestamp":"2015-07-21T06:58:30.168Z"}
+{"level":"info","message":"7nwexggjfeap was allowed to subscribe to 'users'","timestamp":"2015-07-21T06:58:30.172Z"}
+{"level":"info","message":"username of the subscriber: j, connection_status becomes online","timestamp":"2015-07-21T06:58:30.174Z"}
+{"level":"info","message":"----removed slide[d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437461902353/1] from 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T06:58:37.483Z"}
+{"level":"info","message":"in isAllowedTo: action-raiseOwnHand, userId=7nwexggjfeap, authToken=p22jvnkcqtpr validated:true","timestamp":"2015-07-21T06:59:30.149Z"}
+{"message":"eventType=  user_raised_hand_message  ","level":"info","timestamp":"2015-07-21T06:59:30.155Z"}
+{"level":"info","message":"in isAllowedTo: action-lowerOwnHand, userId=7nwexggjfeap, authToken=p22jvnkcqtpr validated:true","timestamp":"2015-07-21T06:59:31.649Z"}
+{"message":"eventType=  user_lowered_hand_message  ","level":"info","timestamp":"2015-07-21T06:59:31.654Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-21T07:01:12.604Z"}
+{"level":"info","message":"marking user [isjjhbyqudxv_6] as offline in meeting[7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858]","timestamp":"2015-07-21T07:01:12.604Z"}
+{"message":"eventType=  end_and_kick_all_message  ","level":"info","timestamp":"2015-07-21T07:03:01.339Z"}
+{"message":"eventType=  meeting_destroyed_event  ","level":"info","timestamp":"2015-07-21T07:03:01.340Z"}
+{"level":"info","message":"there are 1 users in the meeting","timestamp":"2015-07-21T07:03:01.343Z"}
+{"level":"info","message":"there are 1 users in the meeting","timestamp":"2015-07-21T07:03:01.344Z"}
+{"level":"info","message":"marking user [isjjhbyqudxv_6] as offline in meeting[7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858]","timestamp":"2015-07-21T07:03:01.345Z"}
+{"level":"info","message":"marking user [isjjhbyqudxv_6] as offline in meeting[7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858]","timestamp":"2015-07-21T07:03:01.351Z"}
+{"level":"info","message":"end of meeting 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858. Clear the meeting data from all collections","timestamp":"2015-07-21T07:03:01.353Z"}
+{"level":"info","message":"cleared Users Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.353Z"}
+{"level":"info","message":"end of meeting 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858. Clear the meeting data from all collections","timestamp":"2015-07-21T07:03:01.355Z"}
+{"level":"info","message":"cleared Users Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.355Z"}
+{"level":"info","message":"cleared Slides Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.356Z"}
+{"level":"info","message":"cleared Slides Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.358Z"}
+{"level":"info","message":"cleared Shapes Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.359Z"}
+{"level":"info","message":"cleared Shapes Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.361Z"}
+{"level":"info","message":"cleared Presentations Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.362Z"}
+{"level":"info","message":"cleared Presentations Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.363Z"}
+{"level":"info","message":"cleared Chat Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.364Z"}
+{"level":"info","message":"cleared Chat Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.365Z"}
+{"level":"info","message":"cleared Meetings Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.366Z"}
+{"level":"info","message":"cleared Meetings Collection (meetingId: 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437460890858!","timestamp":"2015-07-21T07:03:01.367Z"}
+{"message":"eventType=  meeting_created_message  ","level":"info","timestamp":"2015-07-21T07:03:06.188Z"}
+{"level":"info","message":"added meeting _id=[WrpKe5WM8crgEPEDy]:meetingId=[7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437462186181]:name=[StreamLine Lecture 1]:duration=[0]:voiceConf=[75654] roomLockSettings:[{\"disablePrivChat\":false,\"disableCam\":false,\"disableMic\":false,\"lockOnJoin\":true,\"lockedLayout\":false,\"disablePubChat\":false}].","timestamp":"2015-07-21T07:03:06.191Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-21T07:03:07.677Z"}
+{"message":"eventType=  permisssion_setting_initialized_message  ","level":"info","timestamp":"2015-07-21T07:03:15.102Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-21T07:03:15.309Z"}
+{"level":"info","message":"a non-html5 user got validate_auth_token_reply.","timestamp":"2015-07-21T07:03:15.310Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-21T07:03:15.313Z"}
+{"level":"info","message":"NOTE: got user_joined_message ","timestamp":"2015-07-21T07:03:15.314Z"}
+{"level":"info","message":"joining user userid=[gogiedfzvxbi_1], id=[cLJaDp2bYRvPhxYgP]:Admin User. Users.size is now 1","timestamp":"2015-07-21T07:03:15.319Z"}
+{"message":"eventType=  presenter_assigned_message  ","level":"info","timestamp":"2015-07-21T07:03:15.320Z"}
+{"message":"eventType=  user_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:03:15.323Z"}
+{"message":"eventType=  get_users_reply  ","level":"info","timestamp":"2015-07-21T07:03:15.640Z"}
+{"message":"eventType=  get_recording_status_reply  ","level":"info","timestamp":"2015-07-21T07:03:15.641Z"}
+{"level":"info","message":"----removed slide[d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462186182/1] from 7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437462186181","timestamp":"2015-07-21T07:03:21.030Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-21T07:03:35.842Z"}
+{"level":"info","message":"marking user [gogiedfzvxbi_1] as offline in meeting[7b35ebc26ddd48e3ede348b1c3da1070ce0f480b-1437462186181]","timestamp":"2015-07-21T07:03:35.842Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-21T07:03:44.147Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-21T07:03:44.149Z"}
+{"message":"eventType=  presenter_assigned_message  ","level":"info","timestamp":"2015-07-21T07:03:44.150Z"}
+{"message":"eventType=  user_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:03:44.151Z"}
+{"level":"info","message":"a non-html5 user got validate_auth_token_reply.","timestamp":"2015-07-21T07:03:44.152Z"}
+{"level":"info","message":"UPDATING USER gogiedfzvxbi_1, authToken=undefined, locked=false","timestamp":"2015-07-21T07:03:44.155Z"}
+{"level":"info","message":"added a system message in chat for user gogiedfzvxbi_1","timestamp":"2015-07-21T07:03:44.180Z"}
+{"message":"eventType=  get_users_reply  ","level":"info","timestamp":"2015-07-21T07:03:44.416Z"}
+{"message":"eventType=  get_recording_status_reply  ","level":"info","timestamp":"2015-07-21T07:03:44.417Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-21T07:06:21.410Z"}
+{"userid":"gqmsupmdjgsb","authToken":"6b1qjsgesrkf","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-07-21T07:06:33.484Z"}
+{"level":"info","message":"added user dummy html5 user with: userid=[gqmsupmdjgsb], id=[DdxGiTRvefsFFHtGN] Users.size is now 2","timestamp":"2015-07-21T07:06:33.505Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-21T07:06:33.517Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-21T07:06:33.519Z"}
+{"message":"eventType=  presenter_assigned_message  ","level":"info","timestamp":"2015-07-21T07:06:33.520Z"}
+{"message":"eventType=  user_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:06:33.521Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was false","timestamp":"2015-07-21T07:06:33.522Z"}
+{"level":"info","message":"UPDATING USER gqmsupmdjgsb, authToken=6b1qjsgesrkf, locked=false","timestamp":"2015-07-21T07:06:33.535Z"}
+{"level":"info","message":"user.validated for user gqmsupmdjgsb in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352 just became true","timestamp":"2015-07-21T07:06:33.540Z"}
+{"level":"info","message":"added a system message in chat for user gqmsupmdjgsb","timestamp":"2015-07-21T07:06:33.542Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=gqmsupmdjgsb, authToken=6b1qjsgesrkf validated:true","timestamp":"2015-07-21T07:06:33.661Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352 gqmsupmdjgsb 6b1qjsgesrkf","timestamp":"2015-07-21T07:06:33.663Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:06:34.122Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:06:34.324Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:06:34.556Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352, gqmsupmdjgsb, 6b1qjsgesrkf","timestamp":"2015-07-21T07:06:34.767Z"}
+{"level":"info","message":"found it from the first time gqmsupmdjgsb","timestamp":"2015-07-21T07:06:34.768Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=gqmsupmdjgsb, authToken=6b1qjsgesrkf validated:true","timestamp":"2015-07-21T07:06:34.769Z"}
+{"level":"info","message":"gqmsupmdjgsb was allowed to subscribe to 'users'","timestamp":"2015-07-21T07:06:34.772Z"}
+{"level":"info","message":"username of the subscriber: G, connection_status becomes online","timestamp":"2015-07-21T07:06:34.773Z"}
+{"level":"info","message":"\na user lost connection: session.id=EN3N2dZ5rHJdfJB6w userId = gqmsupmdjgsb, username=G, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:07:16.829Z"}
+{"level":"info","message":"username of the user losing connection: G, connection_status: becomes offline","timestamp":"2015-07-21T07:07:16.833Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352:gqmsupmdjgsb","timestamp":"2015-07-21T07:07:16.835Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-21T07:07:16.840Z"}
+{"level":"info","message":"marking user [gqmsupmdjgsb] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352]","timestamp":"2015-07-21T07:07:16.840Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeChat, userId=gqmsupmdjgsb, authToken=6b1qjsgesrkf validated:true","timestamp":"2015-07-21T07:07:20.936Z"}
+{"level":"info","message":"publishing chat for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352 gqmsupmdjgsb 6b1qjsgesrkf","timestamp":"2015-07-21T07:07:20.939Z"}
+{"level":"info","message":"publishing slides for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:07:21.378Z"}
+{"level":"info","message":"publishing meetings for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:07:21.760Z"}
+{"level":"info","message":"publishing presentations for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:07:21.977Z"}
+{"level":"info","message":"attempt publishing users for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352, gqmsupmdjgsb, 6b1qjsgesrkf","timestamp":"2015-07-21T07:07:22.191Z"}
+{"level":"info","message":"found it from the first time gqmsupmdjgsb","timestamp":"2015-07-21T07:07:22.192Z"}
+{"level":"info","message":"in isAllowedTo: action-subscribeUsers, userId=gqmsupmdjgsb, authToken=6b1qjsgesrkf validated:true","timestamp":"2015-07-21T07:07:22.193Z"}
+{"level":"info","message":"gqmsupmdjgsb was allowed to subscribe to 'users'","timestamp":"2015-07-21T07:07:22.196Z"}
+{"userid":"gqmsupmdjgsb","authToken":"6b1qjsgesrkf","meetingid":"183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","level":"info","message":"sending a validate_auth_token with","timestamp":"2015-07-21T07:07:22.198Z"}
+{"level":"info","message":"html5 user userid:[gqmsupmdjgsb] from [183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352] tried to revalidate token","timestamp":"2015-07-21T07:07:22.199Z"}
+{"level":"info","message":"username of the subscriber: G, connection_status becomes online","timestamp":"2015-07-21T07:07:22.201Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-21T07:07:22.203Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-21T07:07:22.204Z"}
+{"message":"eventType=  presenter_assigned_message  ","level":"info","timestamp":"2015-07-21T07:07:22.206Z"}
+{"message":"eventType=  user_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:07:22.208Z"}
+{"level":"info","message":"in user_joined_message the validStatus of the user was true","timestamp":"2015-07-21T07:07:22.210Z"}
+{"level":"info","message":"UPDATING USER gqmsupmdjgsb, authToken=6b1qjsgesrkf, locked=false","timestamp":"2015-07-21T07:07:22.212Z"}
+{"level":"info","message":"user.validated for user gqmsupmdjgsb in meeting 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352 just became true","timestamp":"2015-07-21T07:07:22.214Z"}
+{"level":"info","message":"\na user lost connection: session.id=AbzZfS22cSvZDrk6Y userId = gqmsupmdjgsb, username=G, meeting=183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352","timestamp":"2015-07-21T07:07:37.626Z"}
+{"level":"info","message":"username of the user losing connection: G, connection_status: becomes offline","timestamp":"2015-07-21T07:07:37.629Z"}
+{"level":"info","message":"sending a user_leaving_request for 183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352:gqmsupmdjgsb","timestamp":"2015-07-21T07:07:37.631Z"}
+{"message":"eventType=  user_left_message  ","level":"info","timestamp":"2015-07-21T07:07:37.633Z"}
+{"level":"info","message":"marking user [gqmsupmdjgsb] as offline in meeting[183f0bf3a0982a127bdb8161e0c44eb696b3e75c-1437461902352]","timestamp":"2015-07-21T07:07:37.633Z"}
+{"message":"eventType=  meeting_created_message  ","level":"info","timestamp":"2015-07-21T07:09:01.194Z"}
+{"level":"info","message":"added meeting _id=[5zRsJBrnvMuuRvSLq]:meetingId=[98a54af5778fc0683fce4313122d466644bc93fb-1437462541187]:name=[StreamLine Test 4]:duration=[0]:voiceConf=[71232] roomLockSettings:[{\"disablePrivChat\":false,\"disableCam\":false,\"disableMic\":false,\"lockOnJoin\":true,\"lockedLayout\":false,\"disablePubChat\":false}].","timestamp":"2015-07-21T07:09:01.197Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-21T07:09:02.379Z"}
+{"level":"info","message":"----removed slide[d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1] from 98a54af5778fc0683fce4313122d466644bc93fb-1437462541187","timestamp":"2015-07-21T07:09:15.959Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-21T07:09:44.090Z"}
+{"message":"eventType=  permisssion_setting_initialized_message  ","level":"info","timestamp":"2015-07-21T07:09:49.944Z"}
+{"message":"eventType=  validate_auth_token_reply  ","level":"info","timestamp":"2015-07-21T07:09:50.134Z"}
+{"message":"eventType=  user_joined_message  ","level":"info","timestamp":"2015-07-21T07:09:50.137Z"}
+{"message":"eventType=  presenter_assigned_message  ","level":"info","timestamp":"2015-07-21T07:09:50.138Z"}
+{"level":"info","message":"a non-html5 user got validate_auth_token_reply.","timestamp":"2015-07-21T07:09:50.139Z"}
+{"message":"eventType=  user_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:09:50.139Z"}
+{"level":"info","message":"NOTE: got user_joined_message ","timestamp":"2015-07-21T07:09:50.141Z"}
+{"level":"info","message":"joining user userid=[saxngviphqpl_1], id=[xXSEhFHpXPFtjHZ9E]:Admin User. Users.size is now 1","timestamp":"2015-07-21T07:09:50.144Z"}
+{"message":"eventType=  get_users_reply  ","level":"info","timestamp":"2015-07-21T07:09:50.462Z"}
+{"message":"eventType=  get_recording_status_reply  ","level":"info","timestamp":"2015-07-21T07:09:50.463Z"}
+{"message":"eventType=  user_registered_message  ","level":"info","timestamp":"2015-07-21T07:10:12.820Z"}
+{"message":"eventType=  recording_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:10:20.932Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:23.891Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:24.019Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:24.203Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:24.310Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:24.566Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:25.825Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:25.972Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:26.168Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:26.262Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:26.642Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:26.984Z"}
+{"message":"eventType=  recording_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:10:28.723Z"}
+{"message":"eventType=  whiteboard_cleared_message  ","level":"info","timestamp":"2015-07-21T07:10:31.900Z"}
+{"level":"info","message":"removeAllShapesFromSlide__d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.900Z"}
+{"level":"info","message":"number of shapes:11","timestamp":"2015-07-21T07:10:31.903Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-12-1437462624915","timestamp":"2015-07-21T07:10:31.903Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-12-1437462624915] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.906Z"}
+{"level":"info","message":"remaining shapes on the slide:10","timestamp":"2015-07-21T07:10:31.908Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-13-1437462625256","timestamp":"2015-07-21T07:10:31.908Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-13-1437462625256] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.910Z"}
+{"level":"info","message":"remaining shapes on the slide:9","timestamp":"2015-07-21T07:10:31.913Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-1-1437462622154","timestamp":"2015-07-21T07:10:31.913Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-1-1437462622154] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.915Z"}
+{"level":"info","message":"remaining shapes on the slide:8","timestamp":"2015-07-21T07:10:31.917Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-2-1437462622292","timestamp":"2015-07-21T07:10:31.917Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-2-1437462622292] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.920Z"}
+{"level":"info","message":"remaining shapes on the slide:7","timestamp":"2015-07-21T07:10:31.923Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-3-1437462622471","timestamp":"2015-07-21T07:10:31.923Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-3-1437462622471] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.925Z"}
+{"level":"info","message":"remaining shapes on the slide:6","timestamp":"2015-07-21T07:10:31.927Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-4-1437462622584","timestamp":"2015-07-21T07:10:31.927Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-4-1437462622584] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.929Z"}
+{"level":"info","message":"remaining shapes on the slide:5","timestamp":"2015-07-21T07:10:31.930Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-5-1437462622839","timestamp":"2015-07-21T07:10:31.931Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-5-1437462622839] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.933Z"}
+{"level":"info","message":"remaining shapes on the slide:4","timestamp":"2015-07-21T07:10:31.934Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-7-1437462624075","timestamp":"2015-07-21T07:10:31.935Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-7-1437462624075] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.937Z"}
+{"level":"info","message":"remaining shapes on the slide:3","timestamp":"2015-07-21T07:10:31.938Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-8-1437462624245","timestamp":"2015-07-21T07:10:31.938Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-8-1437462624245] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.940Z"}
+{"level":"info","message":"remaining shapes on the slide:2","timestamp":"2015-07-21T07:10:31.941Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-9-1437462624440","timestamp":"2015-07-21T07:10:31.941Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-9-1437462624440] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.943Z"}
+{"level":"info","message":"remaining shapes on the slide:1","timestamp":"2015-07-21T07:10:31.944Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-10-1437462624512","timestamp":"2015-07-21T07:10:31.944Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-10-1437462624512] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:31.946Z"}
+{"level":"info","message":"remaining shapes on the slide:0","timestamp":"2015-07-21T07:10:31.947Z"}
+{"message":"eventType=  recording_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:10:34.273Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:35.427Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:35.541Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:35.665Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:35.780Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:35.907Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:36.026Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:36.143Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:36.309Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:36.413Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:36.459Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:37.139Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:37.263Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:37.373Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:37.488Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:37.662Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:37.786Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:37.904Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:38.035Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:38.657Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:38.794Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:39.274Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:39.468Z"}
+{"message":"eventType=  recording_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:10:43.007Z"}
+{"message":"eventType=  whiteboard_cleared_message  ","level":"info","timestamp":"2015-07-21T07:10:44.720Z"}
+{"level":"info","message":"removeAllShapesFromSlide__d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.720Z"}
+{"level":"info","message":"number of shapes:22","timestamp":"2015-07-21T07:10:44.725Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-24-1437462634735","timestamp":"2015-07-21T07:10:44.725Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-24-1437462634735] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.727Z"}
+{"level":"info","message":"remaining shapes on the slide:21","timestamp":"2015-07-21T07:10:44.731Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-26-1437462635403","timestamp":"2015-07-21T07:10:44.731Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-26-1437462635403] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.733Z"}
+{"level":"info","message":"remaining shapes on the slide:20","timestamp":"2015-07-21T07:10:44.737Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-27-1437462635527","timestamp":"2015-07-21T07:10:44.737Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-27-1437462635527] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.739Z"}
+{"level":"info","message":"remaining shapes on the slide:19","timestamp":"2015-07-21T07:10:44.741Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-28-1437462635646","timestamp":"2015-07-21T07:10:44.741Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-28-1437462635646] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.743Z"}
+{"level":"info","message":"remaining shapes on the slide:18","timestamp":"2015-07-21T07:10:44.746Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-29-1437462635758","timestamp":"2015-07-21T07:10:44.746Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-29-1437462635758] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.748Z"}
+{"level":"info","message":"remaining shapes on the slide:17","timestamp":"2015-07-21T07:10:44.751Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-30-1437462635928","timestamp":"2015-07-21T07:10:44.751Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-30-1437462635928] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.753Z"}
+{"level":"info","message":"remaining shapes on the slide:16","timestamp":"2015-07-21T07:10:44.762Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-31-1437462636060","timestamp":"2015-07-21T07:10:44.762Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-31-1437462636060] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.764Z"}
+{"level":"info","message":"remaining shapes on the slide:15","timestamp":"2015-07-21T07:10:44.768Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-15-1437462633699","timestamp":"2015-07-21T07:10:44.768Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-15-1437462633699] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.770Z"}
+{"level":"info","message":"remaining shapes on the slide:14","timestamp":"2015-07-21T07:10:44.772Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-16-1437462633803","timestamp":"2015-07-21T07:10:44.773Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-16-1437462633803] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.775Z"}
+{"level":"info","message":"remaining shapes on the slide:13","timestamp":"2015-07-21T07:10:44.777Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-17-1437462633936","timestamp":"2015-07-21T07:10:44.777Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-17-1437462633936] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.779Z"}
+{"level":"info","message":"remaining shapes on the slide:12","timestamp":"2015-07-21T07:10:44.781Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-18-1437462634053","timestamp":"2015-07-21T07:10:44.782Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-18-1437462634053] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.784Z"}
+{"level":"info","message":"remaining shapes on the slide:11","timestamp":"2015-07-21T07:10:44.786Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-19-1437462634179","timestamp":"2015-07-21T07:10:44.786Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-19-1437462634179] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.791Z"}
+{"level":"info","message":"remaining shapes on the slide:10","timestamp":"2015-07-21T07:10:44.793Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-20-1437462634298","timestamp":"2015-07-21T07:10:44.793Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-20-1437462634298] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.795Z"}
+{"level":"info","message":"remaining shapes on the slide:9","timestamp":"2015-07-21T07:10:44.797Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-21-1437462634417","timestamp":"2015-07-21T07:10:44.797Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-21-1437462634417] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.799Z"}
+{"level":"info","message":"remaining shapes on the slide:8","timestamp":"2015-07-21T07:10:44.800Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-22-1437462634533","timestamp":"2015-07-21T07:10:44.801Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-22-1437462634533] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.802Z"}
+{"level":"info","message":"remaining shapes on the slide:7","timestamp":"2015-07-21T07:10:44.805Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-23-1437462634687","timestamp":"2015-07-21T07:10:44.806Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-23-1437462634687] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.807Z"}
+{"level":"info","message":"remaining shapes on the slide:6","timestamp":"2015-07-21T07:10:44.809Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-32-1437462636178","timestamp":"2015-07-21T07:10:44.809Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-32-1437462636178] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.811Z"}
+{"level":"info","message":"remaining shapes on the slide:5","timestamp":"2015-07-21T07:10:44.813Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-33-1437462636306","timestamp":"2015-07-21T07:10:44.813Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-33-1437462636306] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.815Z"}
+{"level":"info","message":"remaining shapes on the slide:4","timestamp":"2015-07-21T07:10:44.816Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-35-1437462636923","timestamp":"2015-07-21T07:10:44.817Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-35-1437462636923] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.818Z"}
+{"level":"info","message":"remaining shapes on the slide:3","timestamp":"2015-07-21T07:10:44.820Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-36-1437462637065","timestamp":"2015-07-21T07:10:44.820Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-36-1437462637065] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.821Z"}
+{"level":"info","message":"remaining shapes on the slide:2","timestamp":"2015-07-21T07:10:44.823Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-38-1437462637533","timestamp":"2015-07-21T07:10:44.823Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-38-1437462637533] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.826Z"}
+{"level":"info","message":"remaining shapes on the slide:1","timestamp":"2015-07-21T07:10:44.827Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-39-1437462637733","timestamp":"2015-07-21T07:10:44.827Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-39-1437462637733] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:44.829Z"}
+{"level":"info","message":"remaining shapes on the slide:0","timestamp":"2015-07-21T07:10:44.830Z"}
+{"message":"eventType=  recording_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:10:46.606Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:47.585Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:47.701Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:47.827Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:47.941Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:48.057Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:48.182Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:48.313Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:48.430Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:48.554Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:48.700Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:49.385Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:49.501Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:49.615Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:49.749Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:49.912Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:50.027Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:50.164Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:50.262Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:50.395Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:50.583Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:51.217Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:51.376Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:51.825Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:51.943Z"}
+{"message":"eventType=  send_whiteboard_shape_message  ","level":"info","timestamp":"2015-07-21T07:10:52.047Z"}
+{"message":"eventType=  recording_status_changed_message  ","level":"info","timestamp":"2015-07-21T07:10:55.804Z"}
+{"message":"eventType=  whiteboard_cleared_message  ","level":"info","timestamp":"2015-07-21T07:10:56.605Z"}
+{"level":"info","message":"removeAllShapesFromSlide__d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.605Z"}
+{"level":"info","message":"number of shapes:25","timestamp":"2015-07-21T07:10:56.612Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-57-1437462648291","timestamp":"2015-07-21T07:10:56.613Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-57-1437462648291] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.615Z"}
+{"level":"info","message":"remaining shapes on the slide:24","timestamp":"2015-07-21T07:10:56.621Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-58-1437462648404","timestamp":"2015-07-21T07:10:56.622Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-58-1437462648404] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.624Z"}
+{"level":"info","message":"remaining shapes on the slide:23","timestamp":"2015-07-21T07:10:56.631Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-59-1437462648533","timestamp":"2015-07-21T07:10:56.632Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-59-1437462648533] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.634Z"}
+{"level":"info","message":"remaining shapes on the slide:22","timestamp":"2015-07-21T07:10:56.640Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-60-1437462648661","timestamp":"2015-07-21T07:10:56.641Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-60-1437462648661] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.643Z"}
+{"level":"info","message":"remaining shapes on the slide:21","timestamp":"2015-07-21T07:10:56.648Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-61-1437462648851","timestamp":"2015-07-21T07:10:56.649Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-61-1437462648851] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.652Z"}
+{"level":"info","message":"remaining shapes on the slide:20","timestamp":"2015-07-21T07:10:56.656Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-63-1437462649481","timestamp":"2015-07-21T07:10:56.657Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-63-1437462649481] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.659Z"}
+{"level":"info","message":"remaining shapes on the slide:19","timestamp":"2015-07-21T07:10:56.664Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-64-1437462649638","timestamp":"2015-07-21T07:10:56.665Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-64-1437462649638] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.667Z"}
+{"level":"info","message":"remaining shapes on the slide:18","timestamp":"2015-07-21T07:10:56.672Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-41-1437462645848","timestamp":"2015-07-21T07:10:56.673Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-41-1437462645848] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.675Z"}
+{"level":"info","message":"remaining shapes on the slide:17","timestamp":"2015-07-21T07:10:56.679Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-42-1437462645962","timestamp":"2015-07-21T07:10:56.680Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-42-1437462645962] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.682Z"}
+{"level":"info","message":"remaining shapes on the slide:16","timestamp":"2015-07-21T07:10:56.690Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-43-1437462646100","timestamp":"2015-07-21T07:10:56.691Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-43-1437462646100] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.693Z"}
+{"level":"info","message":"remaining shapes on the slide:15","timestamp":"2015-07-21T07:10:56.697Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-44-1437462646212","timestamp":"2015-07-21T07:10:56.698Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-44-1437462646212] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.700Z"}
+{"level":"info","message":"remaining shapes on the slide:14","timestamp":"2015-07-21T07:10:56.704Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-45-1437462646332","timestamp":"2015-07-21T07:10:56.705Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-45-1437462646332] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.707Z"}
+{"level":"info","message":"remaining shapes on the slide:13","timestamp":"2015-07-21T07:10:56.711Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-46-1437462646441","timestamp":"2015-07-21T07:10:56.712Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-46-1437462646441] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.714Z"}
+{"level":"info","message":"remaining shapes on the slide:12","timestamp":"2015-07-21T07:10:56.718Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-47-1437462646583","timestamp":"2015-07-21T07:10:56.719Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-47-1437462646583] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.721Z"}
+{"level":"info","message":"remaining shapes on the slide:11","timestamp":"2015-07-21T07:10:56.724Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-48-1437462646702","timestamp":"2015-07-21T07:10:56.725Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-48-1437462646702] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.727Z"}
+{"level":"info","message":"remaining shapes on the slide:10","timestamp":"2015-07-21T07:10:56.731Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-49-1437462646827","timestamp":"2015-07-21T07:10:56.733Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-49-1437462646827] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.737Z"}
+{"level":"info","message":"remaining shapes on the slide:9","timestamp":"2015-07-21T07:10:56.740Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-50-1437462646976","timestamp":"2015-07-21T07:10:56.741Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-50-1437462646976] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.743Z"}
+{"level":"info","message":"remaining shapes on the slide:8","timestamp":"2015-07-21T07:10:56.747Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-52-1437462647660","timestamp":"2015-07-21T07:10:56.747Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-52-1437462647660] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.750Z"}
+{"level":"info","message":"remaining shapes on the slide:7","timestamp":"2015-07-21T07:10:56.752Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-53-1437462647772","timestamp":"2015-07-21T07:10:56.759Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-53-1437462647772] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.762Z"}
+{"level":"info","message":"remaining shapes on the slide:6","timestamp":"2015-07-21T07:10:56.766Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-54-1437462647886","timestamp":"2015-07-21T07:10:56.766Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-54-1437462647886] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.769Z"}
+{"level":"info","message":"remaining shapes on the slide:5","timestamp":"2015-07-21T07:10:56.771Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-55-1437462648021","timestamp":"2015-07-21T07:10:56.772Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-55-1437462648021] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.773Z"}
+{"level":"info","message":"remaining shapes on the slide:4","timestamp":"2015-07-21T07:10:56.775Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-56-1437462648179","timestamp":"2015-07-21T07:10:56.775Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-56-1437462648179] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.778Z"}
+{"level":"info","message":"remaining shapes on the slide:3","timestamp":"2015-07-21T07:10:56.781Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-66-1437462650096","timestamp":"2015-07-21T07:10:56.782Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-66-1437462650096] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.785Z"}
+{"level":"info","message":"remaining shapes on the slide:2","timestamp":"2015-07-21T07:10:56.786Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-67-1437462650212","timestamp":"2015-07-21T07:10:56.787Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-67-1437462650212] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.788Z"}
+{"level":"info","message":"remaining shapes on the slide:1","timestamp":"2015-07-21T07:10:56.790Z"}
+{"level":"info","message":"shape=saxngviphqpl_1-68-1437462650322","timestamp":"2015-07-21T07:10:56.790Z"}
+{"level":"info","message":"----removed shape[saxngviphqpl_1-68-1437462650322] from d2d9a672040fbde2a47a10bf6c37b6a4b5ae187f-1437462541188/1","timestamp":"2015-07-21T07:10:56.792Z"}
+{"level":"info","message":"remaining shapes on the slide:0","timestamp":"2015-07-21T07:10:56.793Z"}

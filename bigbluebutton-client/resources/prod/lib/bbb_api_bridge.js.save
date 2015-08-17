@@ -1,6 +1,4 @@
 /**
-  This is the dev client
-
   This file contains the BigBlueButton client APIs that will allow 3rd-party applications
   to embed the Flash client and interact with it through Javascript.
   
@@ -90,6 +88,9 @@
       }    
     }
         
+
+
+
     /**
      * Issue a switch presenter command.
      *
@@ -242,7 +243,7 @@
      * Params:
      *    callback - function that gets executed for the response.
      */
-    BBB.recordingRequest = function(callback) {
+    BBB.getMyUserID = function(callback) {
       var swfObj = getSwfObj();
       if (swfObj) {
         console.log("Getting recording status");

@@ -99,6 +99,10 @@ with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
 					return;
 				}
 
+				/* Added by Akshay */
+
+				ExternalInterface.call("BBBRecordRequest");
+
 				var event:BBBEvent = new BBBEvent(BBBEvent.CHANGE_RECORDING_STATUS);
 				event.payload.remote = false;
 				event.payload.recording = recordingFlag;

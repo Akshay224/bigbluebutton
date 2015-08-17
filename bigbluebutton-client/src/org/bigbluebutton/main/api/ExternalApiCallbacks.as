@@ -106,6 +106,10 @@ package org.bigbluebutton.main.api
         ExternalInterface.addCallback("webRTCMediaSuccess", handleWebRTCMediaSuccess);
         ExternalInterface.addCallback("webRTCMediaFail", handleWebRTCMediaFail);
         ExternalInterface.addCallback("javaAppletLaunched", handleJavaAppletLaunched);
+
+	/* Added: Akshay Saini - To determine if a session is currently recording */
+	ExternalInterface.addCallback("recordingRequest", handleRecordingRequest);	
+
       }
       
       // Tell out JS counterpart that we are ready.
@@ -388,6 +392,13 @@ package org.bigbluebutton.main.api
       _dispatcher.dispatchEvent(leaveEvent);
     }
     
+/* Added by Akshay Saini - To track when the record request is triggered */
+    private function handleRecordingRequest():Boolean {
+      var event:BBBEvent = new BBBEvent(BBBEvent.CHANGE_RECORDING_STATUS);
+      return event.payload.recording;
+    }
+/* End Here */
+
     private function onShareVideoCamera(publishInClient:Boolean=true):void {
       trace("Sharing webcam: publishInClient = [" + publishInClient + "]");
       var event:ShareCameraRequestEvent = new ShareCameraRequestEvent();
