@@ -35,8 +35,8 @@ ToolTip {
 
 .mypanelTitle {
   color: #444444;
-  fontFamily: Calibri;
-  fontSize: 18;
+  fontFamily: Arial;
+  fontSize: 12;
 }
 
 .whiteboardToolbarStyle {
@@ -52,8 +52,8 @@ ToolTip {
 
 .meetingNameLabelStyle {
   fontWeight: bold;
-  fontSize: 22;
-  fontFamily: Calibri;
+  fontSize: 15;
+  fontFamily: Arial;
   color: #e1e2e5;
 }
 
@@ -78,8 +78,8 @@ Button, .logoutButtonStyle, .chatSendButtonStyle, .helpLinkButtonStyle, .cameraD
   textSelectedColor: #5e5f63;
   borderColor: #b9babc;
   themeColor: haloBlue;
-  fontFamily: Calibri;
-  fontSize: 14;
+  fontFamily: Arial;
+  fontSize: 12;
 }
 
 .quickWindowLinkStyle {
@@ -123,9 +123,9 @@ Button, .logoutButtonStyle, .chatSendButtonStyle, .helpLinkButtonStyle, .cameraD
 }
 
 .javaVersionRequiredLabelStyle {
-  fontSize: 16;
+  fontSize: 12;
   color: #000000;
-  fontFamily: Calibri;
+  fontFamily: Arial;
 }
 
 .logoutButtonStyle {
@@ -142,16 +142,15 @@ DataGrid {
   color: #5e5f63;
   textSelectedColor: #5e5f63;
   dropShadowEnabled: false;
-  fontFamily: Calibri;
-  fontSize: 14;
+  fontFamily: arial;
+  fontSize: 11;
   headerStyleName: "mydataGridHeaderStyle";
 }
 
 .mydataGridHeaderStyle {
   color: #5e5f63;
-  fontFamily: Calibri;
-  fontSize: 14;
-  fontWeight: bold;
+  fontFamily: arial;
+  fontSize: 12;
 }
 
 
@@ -173,7 +172,7 @@ DataGrid {
   borderColor: #b9babc;
   themeColor: haloBlue;
   fontFamily: Arial;
-  fontSize: 16;
+  fontSize: 12;
 }
 
 .whiteboardUndoButtonStyle 
@@ -266,8 +265,8 @@ DataGrid {
   textSelectedColor: #5e5f63;
   borderColor: #b9babc;
   themeColor: haloBlue;
-  fontFamily: Calibri;
-  fontSize: 16;
+  fontFamily: Arial;
+  fontSize: 12;
 }
 
 .presentationUploadButtonStyle {
@@ -318,8 +317,7 @@ DataGrid {
 
 .presentationZoomSliderLabelStyle {
   color: #5e5f63;
-  fontFamily: Calibri;
-  fontSize: 14;
+  fontFamily: Arial;
 }
 
 .deskshareControlButtonStyle {
@@ -386,18 +384,17 @@ DataGrid {
   backgroundColor: #EFEFEF;
   dropShadowEnabled: true;
   titleStyleName: "presentationFileUploadWindowTitleStyle";
-  fontSize: 14;
 }
 
 .presentationFileUploadWindowTitleStyle, .presentationUploadTitleStyle {
-  fontFamily: Calibri;
+  fontFamily: Arial;
   fontSize: 20;  
   fontWeight: bold;
 }
 
 .presentationNamesLabelStyle {
   fontFamily: Arial;
-  fontSize: 16;  
+  fontSize: 14;  
   fontWeight: bold;
 }
 
@@ -511,20 +508,20 @@ DataGrid {
 }
 
 .webcamSettingsWindowTitleStyle, .micSettingsWindowTitleStyle {
-  fontFamily: Calibri;
+  fontFamily: Arial;
   fontSize: 20;  
   fontWeight: bold;
 }
 
 .micSettingsWindowTestSpeakersLabelStyle, .micSettingsWindowTestMicrophoneLabelStyle {
-  fontFamily: Calibri;
+  fontFamily: Arial;
   fontSize: 14;  
   fontWeight: bold;    
 }
 
 .micSettingsWindowHearFromHeadsetLabelStyle, .micSettingsWindowSpeakIntoMicLabelStyle, .micSettingsWindowMicNameLabelStyle, .webcamPermissionSettingsTextStyle {
-  fontFamily: Calibri;
-  fontSize: 16;    
+  fontFamily: Arial;
+  fontSize: 12;    
 }
 
 .micSettingsWindowPlaySoundButtonStyle, .micSettingsWindowChangeMicButtonStyle {
@@ -741,8 +738,8 @@ MDIWindow { /*None of the following properties are overridden by the MDIWindow c
 
 .mypanelTitle {
   color: #5e5f63;
-  fontFamily: Calibri;
-  fontSize: 18;
+  fontFamily: Arial;
+  fontSize: 12;
   fontWeight: bold;
 }
 
@@ -803,7 +800,7 @@ Alert {
 }
 
 .lockSettingsDefaultLabelStyle {
-	fontFamily: Calibri;
+	fontFamily: Arial;
 	fontSize: 14;  
 	fontWeight: bold;    
 }
@@ -827,7 +824,7 @@ Alert {
 }
 
 .lockSettingsWindowTitleStyle {
-	fontFamily: Calibri;
+	fontFamily: Arial;
 	fontSize: 20;  
 	fontWeight: bold;
 }
@@ -856,11 +853,11 @@ Alert {
 
 .statusTitleStyle {
   fontWeight: bold;
-  fontSize: 16;
+  fontSize: 12;
   paddingBottom: 0;
 }
 
 .statusMessageStyle {
-  fontSize: 16;
+  fontSize: 12;
   paddingTop: 0;
 }
